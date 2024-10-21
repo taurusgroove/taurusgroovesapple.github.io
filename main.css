@@ -1,0 +1,105 @@
+body{
+    background-color: #8ACE00;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 13%;
+    margin-right: 12%;
+    margin-top: 5%;
+    line-break: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#line1{
+    font-size: 85px;
+    font-style: oblique;
+    font-weight: bolder;
+    margin-bottom: 40%;
+}
+
+#rotten:hover {
+    font-size: 95px;
+    color: maroon;
+}
+
+#line2{
+    font-size: 55px;
+    font-style:regular;
+    font-weight: 200;
+    margin-bottom: 40%;
+}
+#line2:hover {
+    color: green;
+}
+
+#line3{
+    font-size: 175px;
+    font-style: bold;
+    font-weight: 100;
+    margin-bottom: 40%;
+}
+#line3:hover {
+    color: yellow;
+}
+
+#line4{
+    font-size: 75px;
+    font-style: oblique;
+    font-weight: 100;
+    margin-bottom: 40%;
+}
+#line4:hover {
+    transform: skew(10deg);
+}
+#line4::before{
+    content: attr(data-text);
+    position: middle;
+    background-color: #8ACE00;
+    height: 55%;
+    overflow: hidden;
+    transition: all 200ms ease-in-out;
+}
+#line4:hover::before{
+    font-size: larger;
+    top: 75px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: red;
+    text-shadow: 0 0 15px color: red;
+}
+#line5{
+    font-size: 30px;
+    font-style: regular;
+    font-weight: lighter;
+    margin-bottom: 50%;
+}
+#line5:hover {
+    color: whitesmoke;
+}
+#line6{
+    font-size: 175px;
+    font-style: bold;
+    font-weight: 800;
+    margin-bottom: 40%;
+}
+#line6:hover {
+    color: pink;
+    transform: skew(10deg);
+}
+
+#line6::before{
+    content: attr(data-text);
+    position: middle;
+    background-color: #8ACE00;
+    height: 55%;
+    overflow: hidden;
+    transition: all 200ms ease-in-out;
+}
+#line6:hover::before{
+    font-size: larger;
+    top: 75px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: red;
+    text-shadow: 0 0 15px color: red;
+}
