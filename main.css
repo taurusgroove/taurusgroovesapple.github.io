@@ -19,6 +19,7 @@ body{
 #rotten:hover {
     font-size: 95px;
     color: maroon;
+    transition: all 200ms ease-in-out
 }
 
 #line2{
@@ -29,6 +30,7 @@ body{
 }
 #line2:hover {
     color: green;
+    transition: all 200ms;
 }
 
 #line3{
@@ -39,6 +41,7 @@ body{
 }
 #line3:hover {
     color: yellow;
+    transition: all 200ms;
 }
 
 #line4{
@@ -48,25 +51,29 @@ body{
     margin-bottom: 40%;
 }
 #line4:hover {
-    transform: skew(10deg);
+    color: red;
+    transform: skew(20deg);
+    transition: all 300ms;
 }
 #line4::before{
     content: attr(data-text);
     position: middle;
     background-color: #8ACE00;
-    height: 55%;
+    height: 60%;
     overflow: hidden;
-    transition: all 200ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 #line4:hover::before{
-    font-size: larger;
-    top: 75px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    font-size: largest;
+    top: 100px;
+    padding-left: 100px;
+    padding-right: 700px;
+    padding-top: 800px;
+    padding-bottom: 400px;
     color: red;
     text-shadow: 0 0 15px color: red;
 }
+
 #line5{
     font-size: 30px;
     font-style: regular;
@@ -83,23 +90,28 @@ body{
     margin-bottom: 40%;
 }
 #line6:hover {
-    color: pink;
-    transform: skew(10deg);
+    color:green;
+    transform: skew(30deg);
 }
 
 #line6::before{
     content: attr(data-text);
     position: middle;
     background-color: #8ACE00;
-    height: 55%;
-    overflow: hidden;
-    transition: all 200ms ease-in-out;
+    height: 60%;
+    overflow: visible;
+    transition: all 800ms;
 }
+
 #line6:hover::before{
     font-size: larger;
-    top: 75px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 1550px;
     color: red;
-    text-shadow: 0 0 15px color: red;
+    text-shadow: 0 0 0px color: red;
+}
+
+.move:hover{
+    text-indent: 2000px;
+    text-wrap: wrap;
+    transition: 10ms all;
 }
